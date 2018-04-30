@@ -1,0 +1,32 @@
+$mainText: #212121;   /*off black*/
+$mainTextInverse: #fdfdfd; /*off white*/
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: $mainText;
+}
+
+a {
+    color: $mainText;
+    text-decoration: none;
+    opacity:.75;
+}
+a:hover {
+    text-decoration: none;
+    opacity:1;
+}
+a:visited {
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: none;
+}
+a:active { 
+    text-decoration: none;
+}

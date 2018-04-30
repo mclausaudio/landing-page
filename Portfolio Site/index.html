@@ -12,34 +12,31 @@
   <meta name="description" content="Michael Claus's personal portfolio page">
   <meta name="keywords" content="Michael Claus, Michael, Claus, sound, audio, web, development, software, music, JavsScript, creative, technology, San, Francisco">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/temp/styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
   <body>
           <header>
-                <nav class="nav-left">
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#portfolio">Portfolio</a></li>
-                  </nav>
-                  <div class="nav-center">MC</div>
-                  <nav class="nav-right">
-                    <li><a href="#music">Music</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                  </nav>
+            <nav class="main_nav">
+                <li class="main_nav-link main_nav-link--left"><a href="#about">About</a></li>
+                <li class="main_nav-link main_nav-link--left"><a href="#portfolio">Portfolio</a></li>
+                <li class="main_nav-link main_nav-logo">MC</li>
+                <li class="main_nav-link main_nav-link--right"><a href="#music">Music</a></li>
+                <li class="main_nav-link main_nav-link--right"><a href="#contact">Contact</a></li>
+            </nav>
           </header>
           
           <section class="hero">
               <div class="hero__background-image" style="background-image: url('images/justyn-warner-519454-unsplash.jpg');"></div>
-              <div class="hero-text">
-                  <h1>Michael Claus</h1>
-                  <h3>Audio Engineer / Software Developer</h3>
+              <div class="hero__text">
+                  <p class="hero__title">Michael Claus</p>
+                  <p class="hero__subtitle">Audio Engineer / Software Developer</p>
                   <p><a href="#contact" class="btn">Contact</a></p>
-                  
               </div>
           </section>
           
           <section class="about" id="about">
-              <h3 class="title">About</h3>
+              <h3 class="section__title">About</h3>
               <hr />
                 <div class="about__container">
                   <div class="about__text">
@@ -53,34 +50,37 @@
           </section>
           
           <section class="portfolio" id="portfolio">
-              <h3 class="title">Portfolio</h3>
-              <hr>
-              <ul class="grid">
-                <li style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></li>
-                <li style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></li>
-                <li style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></li>
-              </ul>
-              <ul class="grid">
-                <li style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></li>
-                <li style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></li>
-                <li style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></li>
-              </ul>
+              <h3 class="section__title">Portfolio</h3>
+              <hr />
+              <div class="grid">
+                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></div>
+                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></div>
+                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></div>
+                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></div>
+                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></div>
+              </div>
           </section>
           
           <section class="music" id="music">
-            <h3 class="title">Music</h3>
-            <ul class="row">
-              <li>
-                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=716260087/size=large/bgcol=ffffff/linkcol=0687f5/package=3304758674/transparent=true/" seamless><a href="http://michaelclaus.bandcamp.com/album/memory-protect">Memory Protect by Michael Claus</a></iframe></li>
-              <li>
-                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2483960833/size=large/bgcol=ffffff/linkcol=0687f5/package=1659711953/transparent=true/" seamless><a href="http://jacktonerecords.bandcamp.com/album/assorted-tracks-vol-2">Assorted Tracks Vol. 2 by Michael Claus</a></iframe>
-              </li>
-            </ul>
-            
+            <h3 class="section__title">Music</h3>
+            <div class="grid">
+               <iframe style="border: 0; width: 350px; height: 655px;" src="https://bandcamp.com/EmbeddedPlayer/album=1965887963/size=large/bgcol=ffffff/linkcol=0687f5/package=2729308978/transparent=true/" seamless><a href="http://lefthandpathwax.bandcamp.com/album/ice-pick">Ice Pick by Michael Claus</a></iframe>
+
+                <iframe style="border: 0; width: 350px; height: 787px;" src="https://bandcamp.com/EmbeddedPlayer/album=716260087/size=large/bgcol=ffffff/linkcol=0687f5/package=3304758674/transparent=true/" seamless><a href="http://michaelclaus.bandcamp.com/album/memory-protect">Memory Protect by Michael Claus</a></iframe>
+
+
+                <iframe style="border: 0; width: 350px; height: 787px;" src="https://bandcamp.com/EmbeddedPlayer/album=2483960833/size=large/bgcol=ffffff/linkcol=0687f5/package=1659711953/transparent=true/" seamless><a href="http://jacktonerecords.bandcamp.com/album/assorted-tracks-vol-2">Assorted Tracks Vol. 2 by Michael Claus</a></iframe>
+
+            </div>
           </section>
           
+          
+          
+          
+          
           <section class="contact" id="contact">
-              <h3 class="title">Contact</h3>
+              <h3 class="section__title">Contact</h3>
               <p>
                 I'm always open to new projects, whether they be programming related or otherwise, so don't hesitate to reach out!
               </p>

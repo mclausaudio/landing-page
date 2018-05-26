@@ -1,0 +1,1 @@
+var app = require('./modules/App.js')

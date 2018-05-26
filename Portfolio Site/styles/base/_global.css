@@ -1,6 +1,35 @@
 $mainText: #212121;   /*off black*/
 $mainTextInverse: #fdfdfd; /*off white*/
 
+$powderBlue: #CDE7F0;
+/*Sky Blue
+#7FC9E0
+Light Blue
+#9ED4E7
+Powder Blue
+
+Dark Slate Gray
+#35514B
+Dark Khaki
+#979D4F*/
+
+@define-mixin atSmall {
+    @media (min-width: 530px) {
+        @mixin-content;
+    }
+}
+@define-mixin atMedium {
+    @media (min-width: 800px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atLarge {
+    @media (min-width: 1200px) {
+        @mixin-content;
+    }
+}
+
 * {
     margin:0;
     padding:0;
@@ -30,3 +59,12 @@ a:focus {
 a:active { 
     text-decoration: none;
 }
+
+hr {
+width: 150px;
+    margin: 0 auto 1rem auto;
+    height: 2px;
+    background-color: #7FC9E0;
+    border: 0;
+}
+

@@ -1,0 +1,23 @@
+.about {
+    
+    &__text {
+        font-weight:300;
+        line-height:1.7;
+        
+        @mixin atSmall {
+            width:50%;
+            line-height: 2.3;
+            font-size:1.5rem;
+            padding-top:2rem;
+            padding-right: 4rem;
+        }
+        
+    }
+    
+    &__hide-photo {
+        display:none;
+        @mixin atSmall {
+        display:inline;
+        }
+    }
+}

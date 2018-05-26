@@ -1,3 +1,5 @@
-.portfolio {
-
+.portfolio { 
+    @mixin atSmall{
+        height:100vh;
+    }
 }

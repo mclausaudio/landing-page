@@ -5,15 +5,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.1875rem 3.25rem;
     font-weight:300;
     animation:1s fadein 0.5s forwards;
     opacity:0;
     z-index: 1;
     
+    @mixin atSmall {
+        padding: 2.1875rem 3.25rem;
+    
+    }
+    
     &-logo {
-    font-size:3rem;
-    padding: 0 8rem;
+
+        @mixin atSmall {
+            font-size:3rem;
+            padding: 0 8rem;        
+        }    
+        
     }
 }
 

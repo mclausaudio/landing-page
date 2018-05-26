@@ -23,18 +23,32 @@
         background-size:cover;
         z-index: -1;
         background-attachment: fixed;
+        
+        @mixin atSmall {
+
+        }
+
     }
     
     &__title {
       font-weight: 300;
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding-bottom:1.5rem;
+      
+      @mixin atSmall {
+        font-size:3rem;
+    }
+      
+      
     }
     
     &__subtitle {
+        font-size:1.4rem;
         font-weight:300;
-        font-size:2rem;
         padding-bottom:1.5rem;
+        @mixin atSmall {
+        font-size:2rem;
+        }
     }
     
     .btn {

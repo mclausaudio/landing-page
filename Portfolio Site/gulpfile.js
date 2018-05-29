@@ -5,7 +5,8 @@ const gulp = require("gulp"),
     autoprefixer = require('autoprefixer'),
     cssvars = require('postcss-simple-vars'),
     nested = require('postcss-nested'),
-    cssImport = require('postcss-import');
+    cssImport = require('postcss-import'),
+    webpack = require('webpack');
 
 gulp.task('styles', function(){
   return gulp.src('styles/styles.css')
@@ -17,6 +18,13 @@ gulp.task('styles', function(){
       .pipe(gulp.dest('styles/temp/styles'));
 });
 
+gulp.task('scripts', function (callback) {
+    webpack(require("./webpack.config.js"), function () {
+        console.log("yay gulp and webpack")
+        callback();
+    });
+})
+
 gulp.task("watch", function(){
     watch("index.html", function(){
         gulp.start('styles');
@@ -24,4 +32,7 @@ gulp.task("watch", function(){
     watch("./styles/**/*.css", function (){
         gulp.start('styles');
     })
-})
+    watch("./scripts/**/*.js", function() {
+        gulp.start('scripts');
+    })
+});

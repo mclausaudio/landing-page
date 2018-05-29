@@ -1,1 +1,1 @@
-module.exports = console.log("connected from App.js")
+console.log("connected from App.jsssss");

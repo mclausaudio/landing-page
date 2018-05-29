@@ -2,6 +2,11 @@
     display:flex;
     min-height: 60vh;
     
+    &__text {
+    font-weight:300;
+    line-height:1.7;
+    font-size:1.5rem;
+    }
     
     &__map {
     padding-right:1rem;
@@ -11,7 +16,7 @@
         display:none;
         @mixin atSmall {
             display:inline;
-    }
+        }
     }
     
     &__subtitle {
@@ -25,21 +30,21 @@
         
     }
     
-    &__text-container {
+    &__link-container {
         display:flex;
         width:100%;
-        flex-direction:column;
+        height:10rem;
+        flex-direction:row;
         justify-content:center;
         align-items:center;
         
-        p {
-            padding-top:1.5rem;
+        i {
+            font-size: 4rem;
+            margin-right:2rem;
         }
-        p:nth-child(1){
-            padding-top: 0;
-        }
+        /*p:nth-child(1){*/
+        /*    padding-top: 0;*/
+        /*}*/
     }
-    
 
-    
 }

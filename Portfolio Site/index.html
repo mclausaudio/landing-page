@@ -1,4 +1,29 @@
 <!DOCTYPE html>
+<!--     ___                    ___          ___          ___          ___                  -->
+<!--    /\  \                  /\__\        /\  \        /\  \        /\__\                 -->
+<!--   |::\  \      ___       /:/  /        \:\  \      /::\  \      /:/ _/_                -->
+<!--   |:|:\  \    /\__\     /:/  /          \:\  \    /:/\:\  \    /:/ /\__\               -->
+<!-- __|:|\:\  \  /:/__/    /:/  /  ___  ___ /::\  \  /:/ /::\  \  /:/ /:/ _/_  ___     ___ -->
+<!--/::::|_\:\__\/::\  \   /:/__/  /\__\/\  /:/\:\__\/:/_/:/\:\__\/:/_/:/ /\__\/\  \   /\__\-->
+<!--\:\~~\  \/__/\/\:\  \__\:\  \ /:/  /\:\/:/  \/__/\:\/:/  \/__/\:\/:/ /:/  /\:\  \ /:/  /-->
+<!-- \:\  \         \:\/\__\\:\  /:/  /  \::/__/      \::/__/      \::/_/:/  /  \:\  /:/  / -->
+<!--  \:\  \         \::/  / \:\/:/  /    \:\  \       \:\  \       \:\/:/  /    \:\/:/  /  -->
+<!--   \:\__\        /:/  /   \::/  /      \:\__\       \:\__\       \::/  /      \::/  /   -->
+<!--    \/__/        \/__/     \/__/        \/__/        \/__/        \/__/        \/__/    -->
+<!--                ___                       ___          ___          ___     -->
+<!--               /\__\                     /\  \        /\  \        /\__\    -->
+<!--              /:/  /                    /::\  \       \:\  \      /:/ _/_   -->
+<!--             /:/  /                    /:/\:\  \       \:\  \    /:/ /\  \  -->
+<!--            /:/  /  ___  ___     ___  /:/ /::\  \  ___  \:\  \  /:/ /::\  \ -->
+<!--           /:/__/  /\__\/\  \   /\__\/:/_/:/\:\__\/\  \  \:\__\/:/_/:/\:\__\-->
+<!--           \:\  \ /:/  /\:\  \ /:/  /\:\/:/  \/__/\:\  \ /:/  /\:\/:/ /:/  /-->
+<!--            \:\  /:/  /  \:\  /:/  /  \::/__/      \:\  /:/  /  \::/ /:/  / -->
+<!--             \:\/:/  /    \:\/:/  /    \:\  \       \:\/:/  /    \/_/:/  /  -->
+<!--              \::/  /      \::/  /      \:\__\       \::/  /       /:/  /   -->
+<!--               \/__/        \/__/        \/__/        \/__/        \/__/  -->
+
+<!-- mclausaudio@gmail.com -->
+
 <!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
 <!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
 <!--[if IE 8]><html class="preIE9"><![endif]-->
@@ -12,7 +37,7 @@
   <meta name="description" content="Michael Claus's personal portfolio page">
   <meta name="keywords" content="Michael Claus, Michael, Claus, sound, audio, web, development, software, music, JavsScript, creative, technology, San, Francisco">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="stylesheet" href="styles/temp/styles/styles.css">
+  <link rel="stylesheet" href="temp/styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
   <body>
@@ -35,12 +60,12 @@
               </div>
           </section>
               <div class="container">
-          <section class="about" id="about">
+          <section class="about">
               <h3 class="section__title">About</h3>
               <hr />
                 <div class="grid">
                     <div class="about__text">
-                        <p>Hi!  I'm Michael.  I'm a professional sound designer, audio engineer,  and self-taught software developer from San Francisco, California.  I began teaching myself JavaScript in 2014 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.  I'm also a published musician.  I've released multiple 12" records, full length LPs and EPs.  I co-run the label <a href="https://soundcloud.com/outpost-sf" target="_blank">Outpost SF</a> with my good friend Cassidy Martin and have my own label called <a href="https://soundcloud.com/silva-electronics" target="_blank">Silva Electronics</a>.</p>
+                        <p id="about-text" class="SlideInFromScroll__hidden">Hi!  I'm Michael.  I'm a professional sound designer, audio engineer,  and self-taught software developer from San Francisco, California.  I began teaching myself JavaScript in 2014 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.  I'm also a published musician.  I've released multiple 12" records, full length LPs and EPs.  I co-run the label <a href="https://soundcloud.com/outpost-sf" target="_blank">Outpost SF</a> with my good friend Cassidy Martin and have my own label called <a href="https://soundcloud.com/silva-electronics" target="_blank">Silva Electronics</a>.</p>
                     </div>
                   <div class="grid__right-half about__hide-photo">
                     
@@ -110,7 +135,8 @@
           <footer>
             <p>This webpage was made from scratch by Michael Claus using a NodeJS + Gulp workflow.  No CSS frameworks were used.</p>
           </footer>
+        <script type="text/javascript" src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script type="text/javascript" src="temp/bundle.js"></script>
 
-    <script type="text/javascript" src="scripts/temp/bundle.js"></script>
   </body>
 </html>

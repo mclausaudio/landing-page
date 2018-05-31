@@ -15,12 +15,11 @@ gulp.task('styles', function(){
         console.log(errorInfo.toString());
         this.emit('end');
       })
-      .pipe(gulp.dest('styles/temp/styles'));
+      .pipe(gulp.dest('temp/styles'));
 });
 
 gulp.task('scripts', function (callback) {
     webpack(require("./webpack.config.js"), function () {
-        console.log("yay gulp and webpack")
         callback();
     });
 })

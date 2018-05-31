@@ -700,7 +700,7 @@ section {
 .container {
     margin: 0 auto;
     max-width: 1400px;
-    padding:1rem;
+    padding:0 2rem 1rem 2rem;
 }
 
 footer {
@@ -721,12 +721,15 @@ footer p {
     color:#fdfdfd;
     }
 
-.SlideInFromScroll__hidden {
-     opacity: 1;
-     margin-left: -100px;
+.slideInFromScroll__hidden {
+     opacity: 0;
+     -webkit-transform:translate(-100px);
+             transform:translate(-100px);
+     transition: all 1s linear;
     }
 
-.SlideInFromScroll__visible {
+.slideInFromScroll__visible {
         opacity: 1;
-        Margin-left:0;
+        -webkit-transform:translate(0);
+                transform:translate(0);
     }

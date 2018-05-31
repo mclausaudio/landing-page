@@ -1,10 +1,11 @@
 require('../../node_modules/waypoints/lib/noframework.waypoints.min.js');
 console.log("slideinonscroll js hello!")
 
-function waypoint(id, handlerCallback) {
+function waypoint(ID, handlerCallback, offset) {
   new Waypoint({
-    element: document.getElementById(id),
-    handler: handlerCallback
+    element: document.getElementById(ID),
+    handler: handlerCallback,
+    offset: offset
   })
 }
 

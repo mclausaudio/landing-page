@@ -2,10 +2,15 @@
     display:flex;
     min-height: 60vh;
     
+    &__hr {
+        margin-top: 2rem;
+        width:20rem;
+    }
+    
     &__text {
     font-weight:300;
     line-height:1.7;
-    font-size:1.5rem;
+    font-size:1.2rem;
     }
     
     &__map {

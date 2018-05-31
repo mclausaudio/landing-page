@@ -1,0 +1,12 @@
+.slideInFromScroll-right {
+    &__hidden {
+     opacity: 0;
+     transform:translateX(100px);
+     transition: all 1s linear;
+    }
+    
+    &__visible {
+        opacity: 1;
+        transform:translateX(0);
+    }
+}

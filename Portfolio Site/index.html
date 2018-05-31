@@ -65,7 +65,7 @@
               <h3 class="section__title">About</h3>
               <hr />
                 <div class="grid">
-                    <div class="about__text slideInFromScroll__hidden" id="about-text">
+                    <div class="about__text slideInFromScroll-left__hidden" id="about-text">
                         <p>Hello, my name is Michael.  I'm a professional sound designer, audio engineer,  and self-taught software developer from San Francisco, California.  I began teaching myself JavaScript in 2014 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.  I'm also a published musician.  I've released multiple 12" records, full length LPs and EPs.  I co-run the label <a href="https://soundcloud.com/outpost-sf" target="_blank">Outpost SF</a> with my good friend Cassidy Martin and have my own label called <a href="https://soundcloud.com/silva-electronics" target="_blank">Silva Electronics</a>.</p>
                     </div>
                   <div class="grid__right-half about__hide-photo">
@@ -80,10 +80,12 @@
               <p class="section__text">
                 Some of the projects below may take up to 5 seconds during their initial load as many are hosted on Heroku.
               </p>
-              <div class="grid">
+              <div id="portfolio-grid-1" class="grid slideInFromScroll-left__hidden">
                 <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></div>
                 <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></div>
                 <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></div>
+              </div>
+              <div id="portfolio-grid-2" class="grid slideInFromScroll-right__hidden">
                 <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></div>
                 <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></div>
                 <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></div>
@@ -97,12 +99,12 @@
                 Here are a few of my recent works.  You can hear recent clips and keep up to date by following me on <a href="www.soundcloud.com/michael-claus">Soundcloud</a>
               </p>
             <div class="grid">
-               <iframe class="music__iframe" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=1965887963/size=large/bgcol=ffffff/linkcol=0687f5/package=2729308978/transparent=true/" seamless><a href="http://lefthandpathwax.bandcamp.com/album/ice-pick">Ice Pick by Michael Claus</a></iframe>
+               <iframe id="music-frame-left" class="music__iframe  slideInFromScroll-left__hidden" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=1965887963/size=large/bgcol=ffffff/linkcol=0687f5/package=2729308978/transparent=true/" seamless><a href="http://lefthandpathwax.bandcamp.com/album/ice-pick">Ice Pick by Michael Claus</a></iframe>
 
-                <iframe class="music__iframe" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=716260087/size=large/bgcol=ffffff/linkcol=0687f5/package=3304758674/transparent=true/" seamless><a href="http://michaelclaus.bandcamp.com/album/memory-protect">Memory Protect by Michael Claus</a></iframe>
+                <iframe id="music-frame-center" class="music__iframe  slideInFromScroll-up__hidden" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=716260087/size=large/bgcol=ffffff/linkcol=0687f5/package=3304758674/transparent=true/" seamless><a href="http://michaelclaus.bandcamp.com/album/memory-protect">Memory Protect by Michael Claus</a></iframe>
 
 
-                <iframe class="music__iframe" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=2483960833/size=large/bgcol=ffffff/linkcol=0687f5/package=1659711953/transparent=true/" seamless><a href="http://jacktonerecords.bandcamp.com/album/assorted-tracks-vol-2">Assorted Tracks Vol. 2 by Michael Claus</a></iframe>
+                <iframe id="music-frame-right" class="music__iframe  slideInFromScroll-right__hidden"  style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=2483960833/size=large/bgcol=ffffff/linkcol=0687f5/package=1659711953/transparent=true/" seamless><a href="http://jacktonerecords.bandcamp.com/album/assorted-tracks-vol-2">Assorted Tracks Vol. 2 by Michael Claus</a></iframe>
 
             </div>
           </section>
@@ -120,7 +122,7 @@
                 <div class="grid__right-half">
                   <div class="">
                     <p class="contact__text">I'm always open to collaborating on new projects, whether they be programming related or otherwise.  Feel free to drop me a line!</p>
-                    <hr />
+                    <hr class="contact__hr" />
                     <div class="contact__link-container">
                       <a href="mailto:mclausaudio@gmail.com"><i class="fa fa-envelope"></i></a>
                       <a href="https://github.com/mclausaudio" target="_blank"><i class="fa fa-github"></i></a>

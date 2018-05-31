@@ -1,5 +1,4 @@
 require('../../node_modules/waypoints/lib/noframework.waypoints.min.js');
-console.log("slideinonscroll js hello!")
 
 function waypoint(ID, handlerCallback, offset) {
   new Waypoint({

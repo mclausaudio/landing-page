@@ -10,17 +10,21 @@
     opacity:0;
     z-index: 1;
     
+    padding:1rem 1rem;
     @mixin atSmall {
         padding: 2.1875rem 3.25rem;
     
     }
     
     &-logo {
-
         @mixin atSmall {
+            font-size:2rem;
+            padding: 0 3rem;        
+        }
+        @mixin atMedium {
             font-size:3rem;
             padding: 0 8rem;        
-        }    
+        }
         
     }
 }

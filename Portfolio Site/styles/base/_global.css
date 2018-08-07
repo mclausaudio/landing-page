@@ -68,3 +68,9 @@ width: 150px;
     border: 0;
 }
 
+.mobile-hide {
+    display:none;
+    @mixin atMedium {
+        display:block;
+    }
+}

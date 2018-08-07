@@ -1,7 +1,7 @@
 footer {
     display:flex;
     margin: 0;
-    padding:0;
+    padding:2.5rem;
     height:3rem;
     background-color:$mainText;
     z-index:-3;
@@ -9,7 +9,7 @@ footer {
     align-items:center;
     p {
     font-weight:300;
-    padding: 0;
+    padding:0;
     margin: 0;
     color:$mainTextInverse;
     }

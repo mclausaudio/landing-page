@@ -56,20 +56,20 @@
               <div class="hero__background-image" style="background-image: url('images/justyn-warner-519454-unsplash.jpg');"></div>
               <div class="hero__text">
                   <p class="hero__title">Michael Claus</p>
-                  <p class="hero__subtitle">Audio Engineer / Software Developer</p>
+                  <p class="hero__subtitle">Sound Designer / Full Stack Developer</p>
                   <p><a href="#contact" class="btn">Contact</a></p>
               </div>
           </section>
               <div class="container">
-          <section class="about">
+          <section class="about" id="about">
               <h3 class="section__title">About</h3>
               <hr />
                 <div class="grid">
-                    <div class="about__text slideInFromScroll-left__hidden" id="about-text">
-                        <p>Hello, my name is Michael.  I'm a professional sound designer, audio engineer,  and self-taught software developer from San Francisco, California.  I began teaching myself JavaScript in 2014 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.  I'm also a published musician.  I've released multiple 12" records, full length LPs and EPs.  I co-run the label <a href="https://soundcloud.com/outpost-sf" target="_blank">Outpost SF</a> with my good friend Cassidy Martin and have my own label called <a href="https://soundcloud.com/silva-electronics" target="_blank">Silva Electronics</a>.</p>
+                  <div class="grid__left-half about__text slideInFromScroll-left__hidden" id="about-text">
+                        <p>Hello, my name is Michael.  I'm a professional sound designer and self-taught software developer from San Francisco, California.  I'm the founder of an online radio platform called <a href="http://www.sutrofm.net" target="_blank">SutroFM</a> and a record label called <a href="http://www.silvaelectronics.net" target="_blank">Silva Electronics</a>.  I'm also a published musician, with multiple releases in a variety of formats, ranging from full length albums on cassette to 4-track EPs on 12" vinyl record.  I began teaching myself JavaScript in 2013 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.</p>
                     </div>
-                  <div class="grid__right-half about__hide-photo">
-                    
+                  <div class="grid__right-half">
+                    <div class="about__photo-image mobile-hide" style="background-image: url('images/portrait.png');"></div>
                   </div>
                 </div>
           </section>
@@ -78,17 +78,52 @@
               <h3 class="section__title">Portfolio</h3>
               <hr />
               <p class="section__text">
-                Some of the projects below may take up to 5 seconds during their initial load as many are hosted on Heroku.
+                Some of the projects below may take up to 10 seconds during their initial load as most are hosted on Heroku.
               </p>
               <div id="portfolio-grid-1" class="grid slideInFromScroll-left__hidden">
-                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></div>
-                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></div>
-                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="grid__portfolio-item" style="background-image: url('images/pollux ss.png');">
+                  <div class="grid__portfolio-item--overlay">
+                    <div class="grid__portfolio-item--overlay-text">
+                      A NodeJS, ExpressJS, and MongoDB based application that allows users to create anonymous polls.
+                      <hr class="grid__portfolio-item--overlay-text-hr"/>
+                      <a href="https://pollux-votingapp.herokuapp.com/" target="_blank">View</a>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="grid__portfolio-item" style="background-image: url('images/ambientforumss.png');">
+                  <div class="grid__portfolio-item--overlay">
+                    <div class="grid__portfolio-item--overlay-text">
+                      An online community for audiophiles.  Ambient Forum uses NodeJS, MongoDB, ExpressJS and Foundation.
+                      <hr class="grid__portfolio-item--overlay-text-hr"/>
+                      <a href="https://ambient-forum.herokuapp.com/" target="_blank">View</a>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="grid__portfolio-item" style="background-image: url('images/reactweatherapp.png');">
+                  <div class="grid__portfolio-item--overlay">
+                    <div class="grid__portfolio-item--overlay-text">
+                      A React application that serves up a given city's current weather conditions.
+                      <hr class="grid__portfolio-item--overlay-text-hr"/>
+                      <a href="http://reactweatherapplication.herokuapp.com/" target="_blank">View</a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div id="portfolio-grid-2" class="grid slideInFromScroll-right__hidden">
-                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');"></div>
-                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');"></div>
-                <div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=800&q=80');"></div>
+                <!--<div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1474267119072-677dd7959e96?ixlib=rb-0.3.5&s=4385b76afaeab588b366166cae54cc5c&auto=format&fit=crop&w=1650&q=80');">-->
+                  
+                <!--</div>-->
+                <!--<div class="grid__portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&s=c8bd642d167a6c5ccb325c23be0f7277&auto=format&fit=crop&w=1650&q=80');">-->
+                <!--</div>-->
+                <!--<div class="grid__portfolio-item" style="background-image: url('images/reactweatherapp.png');">-->
+                <!--  <div class="grid__portfolio-item--overlay">-->
+                <!--    <div class="grid__portfolio-item--overlay-text">-->
+                <!--      A React application that serves up a given city's current weather conditions.-->
+                <!--      <hr class="grid__portfolio-item--overlay-text-hr"/>-->
+                <!--      <a href="http://reactweatherapplication.herokuapp.com/" target="_blank">View</a>-->
+                <!--    </div>-->
+                <!--  </div>-->
+                <!--</div>-->
               </div>
           </section>
           
@@ -96,7 +131,7 @@
             <h3 class="section__title">Music</h3>
             <hr />
             <p class="section__text">
-                Here are a few of my recent works.  You can hear recent clips and keep up to date by following me on <a href="www.soundcloud.com/michael-claus">Soundcloud</a>
+                Here are a few of my recent works.  You can hear recent clips and keep up to date by following me on <a href="http://www.soundcloud.com/michael-claus" target="_blank">Soundcloud</a>
               </p>
             <div class="grid">
                <iframe id="music-frame-left" class="music__iframe  slideInFromScroll-left__hidden" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=1965887963/size=large/bgcol=ffffff/linkcol=0687f5/package=2729308978/transparent=true/" seamless><a href="http://lefthandpathwax.bandcamp.com/album/ice-pick">Ice Pick by Michael Claus</a></iframe>
@@ -114,10 +149,9 @@
               <hr />
 
               <div class="grid">
-                <div class="grid__left-half contact__hide-map">
+                <div class="grid__left-half mobile-hide">
                   <div class="contact__map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d113258.59736211476!2d-122.3442755642373!3d37.78568943195034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1525381327749"  frameborder="0" style="border:0" allowfullscreen></iframe> 
-                    <!--width="600" height="450"-->
                   </div>
                 </div>
                 <div class="grid__right-half">
@@ -135,7 +169,7 @@
           </section>
               </div>
           <footer>
-            <p>This webpage was made from scratch by Michael Claus using a NodeJS + Gulp workflow.  No CSS frameworks were used.</p>
+            <p>This webpage was made from scratch by Michael Claus using a NodeJS + Gulp workflow.  No CSS frameworks were used. Sorry, Bootstrap!</p>
           </footer>
         <script type="text/javascript" src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
     <script type="text/javascript" src="temp/bundle.js"></script>

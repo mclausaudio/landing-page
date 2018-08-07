@@ -1,6 +1,7 @@
 section {
     display:flex;
     flex-direction:column;
+    overflow:hidden;
     
     .&__title {
         font-size: 2rem;

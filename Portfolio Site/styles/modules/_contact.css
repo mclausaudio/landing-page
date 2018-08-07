@@ -31,13 +31,7 @@
     padding-right:1rem;
     }
     
-    &__hide-map {
-        display:none;
-        @mixin atMedium {
-            display:block;
-        }
-    }
-    
+
     &__subtitle {
         text-align: center;
         margin-bottom: .5rem;

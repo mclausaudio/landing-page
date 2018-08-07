@@ -2,28 +2,36 @@
     
     &__text {
         font-weight:300;
-        line-height:1.8;
-        
-        
+        width:100%;
         @mixin atSmall {
             font-size:1.2rem;        
         }
         
         @mixin atMedium {
             width:50%;
-            line-height: 2.3;
+            line-height: 1.7;
             font-size:1.5rem;  
             padding-top:2rem;
             padding-right: 4rem;
         }
-        
-        
     }
     
     &__hide-photo {
-        display:none;
+        /*display:none;*/
+        
         @mixin atMedium {
-        display:inline;
+            display:inline !important;
         }
+    }
+    
+    &__photo-image {
+        position:relative;
+        /*top:0;*/
+        /*left:0;*/
+        width:100% !important;
+        height:100% !important;
+        background-size:cover;
+        /*z-index: -1;*/
+        /*background-attachment: fixed;*/
     }
 }

@@ -5,6 +5,8 @@
     justify-content: center;
     text-align:center;
     min-height: 100vh;
+    background-color: #91D0E5;
+    z-index: -2;
     
     &__text {
         opacity: 0;

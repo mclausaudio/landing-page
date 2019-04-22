@@ -66,7 +66,7 @@
               <hr />
                 <div class="grid">
                   <div class="grid__left-half about__text slideInFromScroll-left__hidden" id="about-text">
-                        <p>Hello, my name is Michael.  I'm a professional sound designer and self-taught software developer from San Francisco, California.  I'm the founder of an online radio platform called <a href="http://www.sutrofm.net" target="_blank">SutroFM</a> and a record label called <a href="http://www.silvaelectronics.net" target="_blank">Silva Electronics</a>.  I'm also a published musician, with multiple releases in a variety of formats, ranging from full length albums on cassette to 4-track EPs on 12" vinyl record.  I began teaching myself JavaScript in 2013 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.</p>
+                        <p>Hello, my name is Michael.  I'm a professional sound designer and self-taught software developer from San Francisco, California.  I'm the founder of an online radio platform called <a href="http://www.sutrofm.net" target="_blank">SutroFM</a> and a record label called <a href="http://www.silvaelectronics.net" target="_blank">Silva Electronics</a>.  I'm also a published musician, with multiple releases in a variety of formats, ranging from full length albums on cassette to 4-track EPs on 12" vinyl record.  I began teaching myself JavaScript in 2014 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.</p>
                     </div>
                   <div class="grid__right-half">
                     <div class="about__photo-image mobile-hide" style="background-image: url('images/portrait.png');"></div>
@@ -78,9 +78,19 @@
               <h3 class="section__title">Portfolio</h3>
               <hr />
               <p class="section__text">
-                Some of the projects below may take up to 10 seconds during their initial load as most are hosted on Heroku.
+                Some of the projects below may take up to 10 seconds during their initial load as most are hosted on Heroku.  You can view all of these project's repositories  along with other work-in-progress projects on my <a href="https://github.com/mclausaudio" target="_blank">GitHub</a>.
               </p>
+              
               <div id="portfolio-grid-1" class="grid slideInFromScroll-left__hidden">
+                <div class="grid__portfolio-item" style="background-image: url('images/fynchcss.png');">
+                  <div class="grid__portfolio-item--overlay">
+                    <div class="grid__portfolio-item--overlay-text">
+                      A twitter clone based on the 'MERN' stack.  Check out the code on my <a href="https://github.com/mclausaudio" target="_blank">GitHub</a>.
+                      <hr class="grid__portfolio-item--overlay-text-hr"/>
+                      <a href="https://fynch-frontend.herokuapp.com/" target="_blank">View</a>
+                    </div>
+                  </div>                  
+                </div>
                 <div class="grid__portfolio-item" style="background-image: url('images/pollux ss.png');">
                   <div class="grid__portfolio-item--overlay">
                     <div class="grid__portfolio-item--overlay-text">
@@ -99,43 +109,34 @@
                     </div>
                   </div>                  
                 </div>
-                <div class="grid__portfolio-item" style="background-image: url('images/reactweatherapp.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      A React application that serves up a given city's current weather conditions.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="http://reactweatherapplication.herokuapp.com/" target="_blank">View</a>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div id="portfolio-grid-2" class="grid slideInFromScroll-right__hidden">
-                <div class="grid__portfolio-item" style="background-image: url('images/sutrofm.png');">
+                <div class="grid__portfolio-item" style="background-image: url('images/mikesmovies.png');">
                   <div class="grid__portfolio-item--overlay">
                     <div class="grid__portfolio-item--overlay-text">
-                      A website built from scratch for an online radio station using NodeJS, Gulp with PostCSS and Bootstrap.
+                      A React and Redux based movie website.
                       <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://www.sutrofm.net" target="_blank">View</a>
+                      <a href="https://guess-the-flag-mc.herokuapp.com/" target="_blank">View</a>
+                    </div>
+                  </div>                  
+                </div>                
+                <div class="grid__portfolio-item" style="background-image: url('images/guesstheflag.png');">
+                  <div class="grid__portfolio-item--overlay">
+                    <div class="grid__portfolio-item--overlay-text">
+                      A React app that utilizes the Fetch API and another third party API for country data.
+                      <hr class="grid__portfolio-item--overlay-text-hr"/>
+                      <a href="https://guess-the-flag-mc.herokuapp.com/" target="_blank">View</a>
                     </div>
                   </div>                  
                 </div>
-                <div class="grid__portfolio-item" style="background-image: url('images/singlepagejquery.png');">
+                <div class="grid__portfolio-item" style="background-image: url('images/markdownpreviewer.png');">
                   <div class="grid__portfolio-item--overlay">
                     <div class="grid__portfolio-item--overlay-text">
-                      A single page todo list application that uses NodeJS, jquery with AJAX and mongoDB.
+                      A React based markdown previewer that utilizes Markedjs.
                       <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://single-page-jquery-todo-app.herokuapp.com/" target="_blank">View</a>
+                      <a href="https://markdown-previewer-mc.herokuapp.com/" target="_blank">View</a>
                     </div>
                   </div>                  
-                </div>
-                <div class="grid__portfolio-item" style="background-image: url('images/GitHub-Mark-120px-plus.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      More projects coming soon!  In the meantime, check out my Github profile to see what I'm up to.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://github.com/mclausaudio" target="_blank">Github</a>
-                    </div>
-                  </div>
                 </div>
               </div>
           </section>
@@ -182,10 +183,9 @@
           </section>
               </div>
           <footer>
-            <p>This webpage was made from scratch by Michael Claus using a NodeJS + Gulp workflow.  No CSS frameworks were used. Sorry, Bootstrap!</p>
+            <p>This webpage was made from scratch by Michael Claus using a NodeJS + Gulp workflow.  No templates or CSS frameworks were used. Sorry, Bootstrap!</p>
           </footer>
         <script type="text/javascript" src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
     <script type="text/javascript" src="temp/bundle.js"></script>
-
   </body>
 </html>

@@ -1,40 +1,32 @@
 .main_nav {
-    position:absolute;
-    width:100%;
-    list-style:none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight:300;
-    animation:1s fadein 0.5s forwards;
-    opacity:0;
-    z-index: 1;
-    
-    padding:1rem 1rem;
-    @mixin atSmall {
-        padding: 2.1875rem 3.25rem;
-    
-    }
-    
-    &-logo {
-        @mixin atSmall {
-            font-size:2rem;
-            padding: 0 3rem;        
-        }
-        @mixin atMedium {
-            font-size:3rem;
-            padding: 0 8rem;        
-        }
-        
-    }
+	position: absolute;
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 300;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	z-index: 2;
+
+	padding: 1rem 1rem;
+	@mixin atSmall {
+		padding: 2.1875rem 3.25rem;
+	}
+
+	&-logo {
+		@mixin atSmall {
+			font-size: 2rem;
+			padding: 0 3rem;
+		}
+		@mixin atMedium {
+			font-size: 3rem;
+			padding: 0 8rem;
+		}
+	}
 }
 
-    @keyframes fadein {
-        100% {
-            opacity: 1;
-        }
-    }
-
 .main_nav-link {
-    text-decoration: none;
+	text-decoration: none;
 }

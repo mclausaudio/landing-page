@@ -29,163 +29,424 @@
 <!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
 <!--[if IE 8]><html class="preIE9"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Michael Claus</title>
-  <meta name="author" content="Michael Claus">
-  <meta name="description" content="Michael Claus's personal portfolio page">
-  <meta name="keywords" content="Michael Claus, Michael, Claus, sound, audio, web, development, software, music, JavsScript, creative, technology, San, Francisco">
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="stylesheet" href="temp/styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
-  <body>
-          <header>
-            <nav class="main_nav">
-                <li class="main_nav-link main_nav-link--left"><a href="#about">About</a></li>
-                <li class="main_nav-link main_nav-link--left"><a href="#portfolio">Portfolio</a></li>
-                <li class="main_nav-link main_nav-logo">MC</li>
-                <li class="main_nav-link main_nav-link--right"><a href="#music">Music</a></li>
-                <li class="main_nav-link main_nav-link--right"><a href="#contact">Contact</a></li>
-            </nav>
-          </header>
-          
-          <section class="hero">
-              <div class="hero__background-image" style="background-image: url('images/justyn-warner-519454-unsplash.jpg');"></div>
-              <div class="hero__text">
-                  <p class="hero__title">Michael Claus</p>
-                  <p class="hero__subtitle">Sound Designer / Full Stack Developer</p>
-                  <p><a href="#contact" class="btn">Contact</a></p>
-              </div>
-          </section>
-              <div class="container">
-          <section class="about" id="about">
-              <h3 class="section__title">About</h3>
-              <hr />
-                <div class="grid">
-                  <div class="grid__left-half about__text slideInFromScroll-left__hidden" id="about-text">
-                        <p>Hello, my name is Michael.  I'm a professional sound designer and self-taught software developer from San Francisco, California.  I'm the founder of an online radio platform called <a href="http://www.sutrofm.net" target="_blank">SutroFM</a> and a record label called <a href="http://www.silvaelectronics.net" target="_blank">Silva Electronics</a>.  I'm also a published musician, with multiple releases in a variety of formats, ranging from full length albums on cassette to 4-track EPs on 12" vinyl record.  I began teaching myself JavaScript in 2014 and continue to use it as my primary programing language.  You can check out some of my projects <a href="#portfolio">below</a>.</p>
-                    </div>
-                  <div class="grid__right-half">
-                    <div class="about__photo-image mobile-hide" style="background-image: url('images/portrait.png');"></div>
-                  </div>
-                </div>
-          </section>
-          
-          <section class="portfolio" id="portfolio">
-              <h3 class="section__title">Portfolio</h3>
-              <hr />
-              <p class="section__text">
-                Some of the projects below may take up to 10 seconds during their initial load as most are hosted on Heroku.  You can view all of these project's repositories  along with other work-in-progress projects on my <a href="https://github.com/mclausaudio" target="_blank">GitHub</a>.
-              </p>
-              
-              <div id="portfolio-grid-1" class="grid slideInFromScroll-left__hidden">
-                <div class="grid__portfolio-item" style="background-image: url('images/fynchcss.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      A twitter clone based on the 'MERN' stack.  Check out the code on my <a href="https://github.com/mclausaudio" target="_blank">GitHub</a>.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://fynch-frontend.herokuapp.com/" target="_blank">View</a>
-                    </div>
-                  </div>                  
-                </div>
-                <div class="grid__portfolio-item" style="background-image: url('images/pollux ss.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      A NodeJS, ExpressJS, and MongoDB based application that allows users to create anonymous polls.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://pollux-votingapp.herokuapp.com/" target="_blank">View</a>
-                    </div>
-                  </div>                  
-                </div>
-                <div class="grid__portfolio-item" style="background-image: url('images/ambientforumss.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      An online community for audiophiles.  Ambient Forum uses NodeJS, MongoDB, ExpressJS and Foundation.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://ambient-forum.herokuapp.com/" target="_blank">View</a>
-                    </div>
-                  </div>                  
-                </div>
-              </div>
-              <div id="portfolio-grid-2" class="grid slideInFromScroll-right__hidden">
-                <div class="grid__portfolio-item" style="background-image: url('images/mikesmovies.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      A React and Redux based movie website.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://guess-the-flag-mc.herokuapp.com/" target="_blank">View</a>
-                    </div>
-                  </div>                  
-                </div>                
-                <div class="grid__portfolio-item" style="background-image: url('images/guesstheflag.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      A React app that utilizes the Fetch API and another third party API for country data.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://guess-the-flag-mc.herokuapp.com/" target="_blank">View</a>
-                    </div>
-                  </div>                  
-                </div>
-                <div class="grid__portfolio-item" style="background-image: url('images/markdownpreviewer.png');">
-                  <div class="grid__portfolio-item--overlay">
-                    <div class="grid__portfolio-item--overlay-text">
-                      A React based markdown previewer that utilizes Markedjs.
-                      <hr class="grid__portfolio-item--overlay-text-hr"/>
-                      <a href="https://markdown-previewer-mc.herokuapp.com/" target="_blank">View</a>
-                    </div>
-                  </div>                  
-                </div>
-              </div>
-          </section>
-          
-          <section class="music" id="music">
-            <h3 class="section__title">Music</h3>
-            <hr />
-            <p class="section__text">
-                Here are a few of my recent works.  You can hear recent clips and keep up to date by following me on <a href="http://www.soundcloud.com/michael-claus" target="_blank">Soundcloud</a>
-              </p>
-            <div class="grid">
-               <iframe id="music-frame-left" class="music__iframe  slideInFromScroll-left__hidden" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=1965887963/size=large/bgcol=ffffff/linkcol=0687f5/package=2729308978/transparent=true/" seamless><a href="http://lefthandpathwax.bandcamp.com/album/ice-pick">Ice Pick by Michael Claus</a></iframe>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Michael Claus</title>
+		<meta name="author" content="Michael Claus" />
+		<meta
+			name="description"
+			content="Michael Claus's personal portfolio page"
+		/>
+		<meta
+			name="keywords"
+			content="Michael Claus, Michael, Claus, sound, audio, web, development, software, music, JavsScript, creative, technology, San, Francisco"
+		/>
+		<link
+			rel="shortcut icon"
+			href="favicon.ico"
+			type="image/vnd.microsoft.icon"
+		/>
+		<link rel="stylesheet" href="temp/styles/styles.css" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700"
+			rel="stylesheet"
+		/>
+		<body>
+			<header>
+				<nav class="main_nav">
+					<li class="main_nav-link main_nav-link--left">
+						<a href="#about">About</a>
+					</li>
+					<li class="main_nav-link main_nav-link--left">
+						<a href="#portfolio">Portfolio</a>
+					</li>
+					<li class="main_nav-link main_nav-logo">MC</li>
+					<li class="main_nav-link main_nav-link--right">
+						<a href="#music">Music</a>
+					</li>
+					<li class="main_nav-link main_nav-link--right">
+						<a href="#contact">Contact</a>
+					</li>
+				</nav>
+			</header>
 
-                <iframe id="music-frame-center" class="music__iframe  slideInFromScroll-up__hidden" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=716260087/size=large/bgcol=ffffff/linkcol=0687f5/package=3304758674/transparent=true/" seamless><a href="http://michaelclaus.bandcamp.com/album/memory-protect">Memory Protect by Michael Claus</a></iframe>
+			<section class="hero">
+				<div
+					class="hero__background-image"
+					style="background-image: url('images/justyn-warner-519454-unsplash resize.jpg')"
+				></div>
+				<div class="hero__text">
+					<p class="hero__title">Michael Claus</p>
+					<p class="hero__subtitle">
+						Full Stack Developer / Sound Designer
+					</p>
+					<div class="hero__social-media-links">
+						<a href="mailto:mclausaudio@gmail.com"
+							><i class="fa fa-envelope"></i
+						></a>
+						<a href="https://github.com/mclausaudio" target="_blank"
+							><i class="fab fa-github"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/michael-claus-a2a5aab2"
+							target="_blank"
+							><i class="fab fa-linkedin"></i
+						></a>
+					</div>
+					<div class="hero__header-arrow">
+						<i class="fas fa-chevron-down"></i>
+					</div>
+				</div>
+			</section>
 
+			<div class="container">
+				<section class="about" id="about">
+					<h3 class="section__title">About</h3>
+					<hr />
+					<div class="grid">
+						<div
+							class="grid__left-half about__text slideInFromScroll-left__hidden"
+							id="about-text"
+						>
+							<p>
+								Hello, my name is Michael. I'm a Full Stack
+								Developer from San Francisco, California. I'm
+								the founder of an online radio station called
+								<a href="http://www.sutrofm.net" target="_blank"
+									>SutroFM.net</a
+								>
+								and a record label called
+								<a
+									href="http://www.silvaelectronics.net"
+									target="_blank"
+									>Silva Electronics</a
+								>. I began teaching myself JavaScript in 2014
+								and continue to use it as my primary programing
+								language. You can view examples of my work
+								<a href="#portfolio">below</a>. I'm also a
+								published musician, with releases in a variety
+								of formats ranging from 12" vinyl to cassette to
+								digital. Programming, technology and music are
+								passions of mine and I am constantly seeking out
+								new and creative ways to fuse them to foster
+								positive social change and self-expression.
+							</p>
+						</div>
+						<div class="grid__right-half">
+							<div class="mobile-hide">
+								<img
+									class="about__photo-image"
+									src="images/profile image.png"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
 
-                <iframe id="music-frame-right" class="music__iframe  slideInFromScroll-right__hidden"  style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=2483960833/size=large/bgcol=ffffff/linkcol=0687f5/package=1659711953/transparent=true/" seamless><a href="http://jacktonerecords.bandcamp.com/album/assorted-tracks-vol-2">Assorted Tracks Vol. 2 by Michael Claus</a></iframe>
+				<section class="portfolio" id="portfolio">
+					<h3 class="section__title">Portfolio</h3>
+					<hr />
+					<p class="section__text">
+						<span class="mobile-hide"
+							>Some of the projects below may take up to 10
+							seconds during their initial load as most are hosted
+							on Heroku. You can view all of these project's
+							repositories along with other work-in-progress
+							projects on my
+							<a
+								href="https://github.com/mclausaudio"
+								target="_blank"
+								>GitHub</a
+							>.
+						</span>
+						<span class="mobile-show"
+							>This section isn't really set up for mobile. Come
+							back and check it out when you're on a laptop or
+							desktop. You can also check out my
+							<a
+								href="https://github.com/mclausaudio"
+								target="_blank"
+								>GitHub</a
+							>.</span
+						>
+					</p>
 
-            </div>
-          </section>
-          
-          <section class="contact" id="contact">
-              <h3 class="section__title">Contact</h3>
-              <hr />
+					<div
+						id="portfolio-grid-1"
+						class="grid slideInFromScroll-left__hidden mobile-hide"
+					>
+						<div
+							class="grid__portfolio-item mobile-hide"
+							style="background-image: url('images/activity_view.png');"
+						>
+							<div
+								class="grid__portfolio-item--overlay mobile-hide"
+							>
+								<div class="grid__portfolio-item--overlay-text">
+									Task Tracker. A MERN stack + Redux based
+									app.
+									<hr
+										class="grid__portfolio-item--overlay-text-hr"
+									/>
+									<a
+										href="https://task-tracker-mc.herokuapp.com/"
+										target="_blank"
+										>View</a
+									>
+									|
+									<a
+										href="https://github.com/mclausaudio/task-tracker-frontend"
+										target="_blank"
+										>GitHub</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="grid__portfolio-item mobile-hide"
+							style="background-image: url('images/plant pal.png');"
+						>
+							<div class="grid__portfolio-item--overlay">
+								<div class="grid__portfolio-item--overlay-text">
+									Plant Pal. Full stack Python & Flask app
+									<hr
+										class="grid__portfolio-item--overlay-text-hr"
+									/>
+									<a
+										href="https://plant-pal.herokuapp.com/"
+										target="_blank"
+										>View</a
+									>
+									|
+									<a
+										href="https://github.com/Ghenet/PlantPal"
+										target="_blank"
+										>GitHub</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="grid__portfolio-item mobile-hide"
+							style="background-image: url('images/oasis.png');"
+						>
+							<div class="grid__portfolio-item--overlay">
+								<div class="grid__portfolio-item--overlay-text">
+									Oasis. Full Stack MERN app.
+									<hr
+										class="grid__portfolio-item--overlay-text-hr"
+									/>
+									<a
+										href="http://nameless-crag-43595.herokuapp.com/"
+										target="_blank"
+										>View</a
+									>
+									|
+									<a
+										href="https://github.com/brandonmcastillo/Oasis-FrontEnd"
+										target="_blank"
+										>GitHub</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						id="portfolio-grid-2"
+						class="grid slideInFromScroll-right__hidden mobile-hide"
+					>
+						<div
+							class="grid__portfolio-item mobile-hide"
+							style="background-image: url('images/pollux ss.png');"
+						>
+							<div class="grid__portfolio-item--overlay">
+								<div class="grid__portfolio-item--overlay-text">
+									Pollux. Express, Mongoose, JSX based polling
+									app.
+									<hr
+										class="grid__portfolio-item--overlay-text-hr"
+									/>
+									<a
+										href="https://pollux-votingapp.herokuapp.com/"
+										target="_blank"
+										>View</a
+									>
+									|
+									<a
+										href="https://github.com/mclausaudio/voting-app"
+										target="_blank"
+										>GitHub</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="grid__portfolio-item mobile-hide"
+							style="background-image: url('images/ambientforumss.png');"
+						>
+							<div class="grid__portfolio-item--overlay">
+								<div class="grid__portfolio-item--overlay-text">
+									Ambient Forums. Node, Express, MongoDB based
+									message board app.
+									<hr
+										class="grid__portfolio-item--overlay-text-hr"
+									/>
+									<a
+										href="https://ambient-forum.herokuapp.com/"
+										target="_blank"
+										>View</a
+									>
+									|
+									<a
+										href="https://github.com/mclausaudio/ambientforum"
+										target="_blank"
+										>GitHub</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="grid__portfolio-item mobile-hide"
+							style="background-image: url('images/GitHub-Mark-120px-plus.png');"
+						>
+							<div class="grid__portfolio-item--overlay">
+								<div class="grid__portfolio-item--overlay-text">
+									View more of my work on GitHub.
+									<hr
+										class="grid__portfolio-item--overlay-text-hr"
+									/>
+									<a
+										href="https://markdown-previewer-mc.herokuapp.com/"
+										target="_blank"
+										>View</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-              <div class="grid">
-                <div class="grid__left-half mobile-hide">
-                  <div class="contact__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d113258.59736211476!2d-122.3442755642373!3d37.78568943195034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1525381327749"  frameborder="0" style="border:0" allowfullscreen></iframe> 
-                  </div>
-                </div>
-                <div class="grid__right-half">
-                    <p class="contact__text">I'm always open to collaborating on new projects, whether they be programming related or otherwise.  Feel free to drop me a line!</p>
-                    <hr class="contact__hr" />
-                    <div class="contact__link-container">
-                      <a href="mailto:mclausaudio@gmail.com"><i class="fa fa-envelope"></i></a>
-                      <a href="https://github.com/mclausaudio" target="_blank"><i class="fa fa-github"></i></a>
-                      <a href="https://www.linkedin.com/in/michael-claus-a2a5aab2" target="_blank"><i class="fa fa-linkedin"></i></a>
-                      <a href="https://www.soundcloud.com/michael-claus" target="_blank"><i class="fa fa-soundcloud"></i></a>
-                      <a href="https://codepen.io/runsf/" target="_blank"><i class="fa fa-codepen"></i></a>
-                    </div>
-                </div>
-              </div>
-          </section>
-              </div>
-          <footer>
-            <p>This webpage was made from scratch by Michael Claus using a NodeJS + Gulp workflow.  No templates or CSS frameworks were used. Sorry, Bootstrap!</p>
-          </footer>
-        <script type="text/javascript" src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
-    <script type="text/javascript" src="temp/bundle.js"></script>
-  </body>
+				<section class="music" id="music">
+					<h3 class="section__title">Music</h3>
+					<hr />
+					<p class="section__text">
+						Here are a few of my recent works. You can hear recent
+						clips and keep up to date by following me on
+						<a
+							href="http://www.soundcloud.com/michael-claus"
+							target="_blank"
+							>Soundcloud</a
+						>
+					</p>
+					<div class="grid">
+						<iframe
+							id="music-frame-left"
+							class="music__iframe  slideInFromScroll-left__hidden"
+							style="border: 0;"
+							src="https://bandcamp.com/EmbeddedPlayer/album=1965887963/size=large/bgcol=ffffff/linkcol=0687f5/package=2729308978/transparent=true/"
+							seamless
+							><a
+								href="http://lefthandpathwax.bandcamp.com/album/ice-pick"
+								>Ice Pick by Michael Claus</a
+							></iframe
+						>
+
+						<iframe
+							id="music-frame-center"
+							class="music__iframe  slideInFromScroll-up__hidden"
+							style="border: 0;"
+							src="https://bandcamp.com/EmbeddedPlayer/album=716260087/size=large/bgcol=ffffff/linkcol=0687f5/package=3304758674/transparent=true/"
+							seamless
+							><a
+								href="http://michaelclaus.bandcamp.com/album/memory-protect"
+								>Memory Protect by Michael Claus</a
+							></iframe
+						>
+
+						<iframe
+							id="music-frame-right"
+							class="music__iframe  slideInFromScroll-right__hidden"
+							style="border: 0;"
+							src="https://bandcamp.com/EmbeddedPlayer/album=2483960833/size=large/bgcol=ffffff/linkcol=0687f5/package=1659711953/transparent=true/"
+							seamless
+							><a
+								href="http://jacktonerecords.bandcamp.com/album/assorted-tracks-vol-2"
+								>Assorted Tracks Vol. 2 by Michael Claus</a
+							></iframe
+						>
+					</div>
+				</section>
+				<section class="contact" id="contact">
+					<h3 class="section__title">Contact</h3>
+					<hr />
+					<div class="grid">
+						<div class="grid__left-half mobile-hide">
+							<div class="contact__map">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d113258.59736211476!2d-122.3442755642373!3d37.78568943195034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1525381327749"
+									frameborder="0"
+									style="border:0"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div>
+						<div class="grid__right-half">
+							<p class="contact__text">
+								I'm always open to collaborating on new
+								projects, whether they be programming related or
+								otherwise. Feel free to drop me a line!
+							</p>
+							<hr class="contact__hr" />
+							<div class="contact__link-container">
+								<a href="mailto:mclausaudio@gmail.com"
+									><i class="fa fa-envelope"></i
+								></a>
+								<a
+									href="https://github.com/mclausaudio"
+									target="_blank"
+									><i class="fab fa-github"></i
+								></a>
+								<a
+									href="https://www.linkedin.com/in/michael-claus-a2a5aab2"
+									target="_blank"
+									><i class="fab fa-linkedin"></i
+								></a>
+								<a
+									href="https://www.soundcloud.com/michael-claus"
+									target="_blank"
+									><i class="fab fa-soundcloud"></i
+								></a>
+								<a
+									href="https://codepen.io/runsf/"
+									target="_blank"
+									><i class="fab fa-codepen"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer>
+				<p>
+					This webpage was made from scratch by Michael Claus using
+					NodeJS, Gulp with PostCSS, and webpack. No templates or CSS
+					frameworks were used.
+				</p>
+			</footer>
+			<script
+				type="text/javascript"
+				src="node_modules/waypoints/lib/noframework.waypoints.min.js"
+			></script>
+			<script type="text/javascript" src="temp/bundle.js"></script>
+		</body>
+	</head>
 </html>

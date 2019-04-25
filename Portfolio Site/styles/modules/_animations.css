@@ -1,0 +1,20 @@
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes down-arrow {
+	0% {
+		opacity: 0;
+		margin-bottom: 1em;
+	}
+	50% {
+		opacity: 1;
+		margin-bottom: 0;
+	}
+	100% {
+		opacity: 0;
+		margin-bottom: 1em;
+	}
+}

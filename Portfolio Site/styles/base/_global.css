@@ -1,7 +1,7 @@
-$mainText: #212121;   /*off black*/
+$mainText: #212121; /*off black*/
 $mainTextInverse: #fdfdfd; /*off white*/
 
-$powderBlue: #CDE7F0;
+$powderBlue: #cde7f0;
 /*Sky Blue
 #7FC9E0
 Light Blue
@@ -14,63 +14,70 @@ Dark Khaki
 #979D4F*/
 
 @define-mixin atSmall {
-    @media (min-width: 530px) {
-        @mixin-content;
-    }
+	@media (min-width: 530px) {
+		@mixin-content;
+	}
 }
 @define-mixin atMedium {
-    @media (min-width: 800px) {
-        @mixin-content;
-    }
+	@media (min-width: 737px) {
+		@mixin-content;
+	}
 }
 
 @define-mixin atLarge {
-    @media (min-width: 1200px) {
-        @mixin-content;
-    }
+	@media (min-width: 1200px) {
+		@mixin-content;
+	}
 }
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
-    color: $mainText;
+	font-family: "Open Sans", sans-serif;
+	color: $mainText;
 }
 
 a {
-    color: $mainText;
-    text-decoration: none;
-    opacity:.75;
+	color: $mainText;
+	text-decoration: none;
+	opacity: 0.75;
 }
 a:hover {
-    text-decoration: none;
-    opacity:1;
+	text-decoration: none;
+	opacity: 1;
 }
 a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
 a:focus {
-    text-decoration: none;
+	text-decoration: none;
 }
-a:active { 
-    text-decoration: none;
+a:active {
+	text-decoration: none;
 }
 
 hr {
-width: 150px;
-    margin: 0 auto 1rem auto;
-    height: 2px;
-    background-color: #7FC9E0;
-    border: 0;
+	width: 150px;
+	margin: 0 auto 2rem auto;
+	height: 2px;
+	background-color: #7fc9e0;
+	border: 0;
+}
+
+.mobile-show {
+	display: block;
+	@mixin atMedium {
+		display: none;
+	}
 }
 
 .mobile-hide {
-    display:none;
-    @mixin atMedium {
-        display:block;
-    }
+	display: none;
+	@mixin atMedium {
+		display: block;
+	}
 }
